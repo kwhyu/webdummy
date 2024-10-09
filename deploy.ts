@@ -3,7 +3,7 @@ import { serve } from "https://deno.land/std@0.152.0/http/server.ts";
 
 const port = parseInt(Deno.env.get("PORT") || "8000", 10);
 const server = serve({ port });
-console.log(`Server running on http://localhost:${port}`);
+console.log(`Server berjalan di http://localhost:${port}`);
 
 for await (const req of server) {
   const url = new URL(req.url);
